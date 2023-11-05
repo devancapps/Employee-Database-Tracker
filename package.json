@@ -1,0 +1,16 @@
+{
+  "name": "employee-database-tracker",
+  "version": "1.0.0",
+  "description": "This application was built utilizing MySQL and Javascript as a demo software for HR or managers that can be used to manage employees.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^8.2.4",
+    "mysql2": "^3.6.3"
+  }
+}
