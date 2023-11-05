@@ -10,9 +10,18 @@ class EmployeeQueries {
     }
   }
 
-  
+  static async addEmployee(firstName, lastName, roleId, managerId) {
+    try {
+      const [result] = await db.promise().query(
+        'INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES (?, ?, ?, ?)',
+        [firstName, lastName, roleId, managerId]
+      );
+      return result;
+    } catch (err) {
+      throw err;
+    }
+  }
 
-  // Add more query functions for updating, deleting, viewing by manager/department, etc.
 }
 
 module.exports = EmployeeQueries;
