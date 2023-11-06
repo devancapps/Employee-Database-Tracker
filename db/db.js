@@ -1,10 +1,11 @@
 const mysql = require('mysql2');
+const dotenv = require('dotenv');
 
 const connection = mysql.createConnection({
-  host: 'localhost',
-  user: 'your_username',
-  password: 'your_password',
-  database: 'your_database',
+  host: 'yjo6uubt3u5c16az.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
+  user: 'p9c2gniy7ql6zwug',
+  password: 'xpmb9k19lk6e2lem',
+  database: 'g0r057pl9c5bnjyg',
 });
 
 connection.promise()
